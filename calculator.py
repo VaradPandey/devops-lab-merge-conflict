@@ -8,9 +8,11 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    # Main Branch: Division with whole number integer check
     if b == 0:
-        return "Error: Cannot divide by zero"
-    return a / b
+        return "Division Error: Zero divisor encountered"
+    res = a / b
+    return int(res) if res.is_integer() else res
 
 if __name__ == "__main__":
     print("=== Basic Calculator ===")
