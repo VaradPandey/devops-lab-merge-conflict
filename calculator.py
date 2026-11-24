@@ -8,9 +8,10 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    # Feature Branch: Precision division with rounding to 4 decimal places
     if b == 0:
-        return "Error: Cannot divide by zero"
-    return a / b
+        raise ZeroDivisionError("Error: Division by zero is not allowed.")
+    return round(a / b, 4)
 
 if __name__ == "__main__":
     print("=== Basic Calculator ===")

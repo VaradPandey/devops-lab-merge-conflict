@@ -6,4 +6,4 @@ A lightweight Python command-line calculator developed to demonstrate version co
 - Addition
 - Subtraction
 - Multiplication
-- Basic Division
+- Advanced Division (with precision rounding and exception raising)
