@@ -8,10 +8,10 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    # Main Branch: Division with whole number integer check
+    # Resolved: Combines exception handling, precision rounding, and integer display
     if b == 0:
-        return "Division Error: Zero divisor encountered"
-    res = a / b
+        raise ZeroDivisionError("Error: Division by zero is not allowed.")
+    res = round(a / b, 4)
     return int(res) if res.is_integer() else res
 
 if __name__ == "__main__":
